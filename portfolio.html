@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Портфоліо</title>
   </head>
   <body>
@@ -39,20 +39,20 @@
       </div>
   </header>
     <main>
-      <section class="filter_and_examples">
+      <section class="portfolio">
         <div class="container">
-          <h1 class="portfolio-heading">Портфоліо компаії</h1>
+          <h1 class="portfolio__heading">Портфоліо компаії</h1>
           <ul class="filter">
-            <li><button class="btn-ex" type="button">Усі</button></li>
-            <li><button class="btn-ex" type="button">Веб-сайти</button></li>
-            <li><button class="btn-ex" type="button">Додатки</button></li>
-            <li><button class="btn-ex" type="button">Дизайн</button></li>
-            <li><button class="btn-ex" type="button">Маркетинг</button></li>
+            <li class="filter__item"><button class="btn-ex" type="button">Усі</button></li>
+            <li class="filter__item"><button class="btn-ex" type="button">Веб-сайти</button></li>
+            <li class="filter__item"><button class="btn-ex" type="button">Додатки</button></li>
+            <li class="filter__item"><button class="btn-ex" type="button">Дизайн</button></li>
+            <li class="filter__item"><button class="btn-ex" type="button">Маркетинг</button></li>
           </ul>
 
           <ul class="gallary">
-            <li class="examples-cards">
-              <div class="img-ex"><img
+            <li class="gallary__item">
+              <div class="gallary__img"><img
                   src="./images/ex1.jpg"
                   alt="головна сторінка сайту"
                   width="370"
@@ -63,13 +63,13 @@
                   чи приватну особу.</div>
               </div>
 
-              <div class="ex-info">
-                <h3 class="exmples-names">Технокряк</h3>
-                <p class="exmples-info">Веб-сайт</p>
+              <div class="product">
+                <h3 class="product__name">Технокряк</h3>
+                <p class="product__info">Веб-сайт</p>
               </div>
             </li>
-            <li class="examples-cards">
-              <div class="img-ex">
+            <li class="gallary__item">
+              <div class="gallary__img">
                 <img
                   src="./images/ex2.jpg"
                   alt="постер баскетбольного матчу"
@@ -80,13 +80,13 @@
                   дозволить відвідувачу отримати вичерпні відомості про компанію
                   чи приватну особу.</div>
               </div>
-              <div class="ex-info">
-                <h3 class="exmples-names">Постер New Orlean vs Golden Star</h3>
-                <p class="exmples-info">Дизайн</p>
+              <div class="product">
+                <h3 class="product__name">Постер New Orlean vs Golden Star</h3>
+                <p class="product__info">Дизайн</p>
               </div>
             </li>
-            <li class="examples-cards">
-              <div class="img-ex"><img
+            <li class="gallary__item">
+              <div class="gallary__img"><img
                   src="./images/ex3.jpg"
                   alt="лого ресторану"
                   width="370"
@@ -97,13 +97,13 @@
                   відвідувачу отримати вичерпні відомості про компанію чи
                   приватну
                   особу.</div></div>
-              <div class="ex-info">
-                <h3 class="exmples-names">Ресторан Seafood</h3>
-                <p class="exmples-info">Додаток</p>
+              <div class="product">
+                <h3 class="product__name">Ресторан Seafood</h3>
+                <p class="product__info">Додаток</p>
               </div>
             </li>
-            <li class="examples-cards">
-              <div class="img-ex"> <img
+            <li class="gallary__item">
+              <div class="gallary__img"> <img
                   src="./images/ex4.jpg"
                   alt="безпровідні навушники"
                   width="370"
@@ -114,13 +114,13 @@
                   відвідувачу отримати вичерпні відомості про компанію чи
                   приватну
                   особу.</div></div>
-              <div class="ex-info">
-                <h3 class="exmples-names">Проєкт Prime</h3>
-                <p class="exmples-info">Маркетинг</p>
+              <div class="product">
+                <h3 class="product__name">Проєкт Prime</h3>
+                <p class="product__info">Маркетинг</p>
               </div>
             </li>
-            <li class="examples-cards">
-              <div class="img-ex"> <img
+            <li class="gallary__item">
+              <div class="gallary__img"> <img
                   src="./images/ex5.jpg"
                   alt="фото дизайну коробок"
                   width="370"
@@ -131,13 +131,13 @@
                   відвідувачу отримати вичерпні відомості про компанію чи
                   приватну
                   особу.</div></div>
-              <div class="ex-info">
-                <h3 class="exmples-names">Проєкт Boxes</h3>
-                <p class="exmples-info">Додаток</p>
+              <div class="product">
+                <h3 class="product__name">Проєкт Boxes</h3>
+                <p class="product__info">Додаток</p>
               </div>
             </li>
-            <li class="examples-cards">
-              <div class="img-ex"><img
+            <li class="gallary__item">
+              <div class="gallary__img"><img
                   src="./images/ex6.jpg"
                   alt="дизайн сайту"
                   width="370"
@@ -148,13 +148,13 @@
                   відвідувачу отримати вичерпні відомості про компанію чи
                   приватну
                   особу.</div></div>
-              <div class="ex-info">
-                <h3 class="exmples-names">Inspiration has no Borders</h3>
-                <p class="exmples-info">Веб-сайт</p>
+              <div class="product">
+                <h3 class="product__name">Inspiration has no Borders</h3>
+                <p class="product__info">Веб-сайт</p>
               </div>
             </li>
-            <li class="examples-cards">
-              <div class="img-ex"> <img
+            <li class="gallary__item">
+              <div class="gallary__img"> <img
                   src="./images/ex7.jpg"
                   alt="дизайн розгортки журналу"
                   width="370"
@@ -165,13 +165,13 @@
                   відвідувачу отримати вичерпні відомості про компанію чи
                   приватну
                   особу.</div></div>
-              <div class="ex-info">
-                <h3 class="exmples-names">Видання Limited Edition</h3>
-                <p class="exmples-info">Дизайн</p>
+              <div class="product">
+                <h3 class="product__name">Видання Limited Edition</h3>
+                <p class="product__info">Дизайн</p>
               </div>
             </li>
-            <li class="examples-cards">
-              <div class="img-ex"> <img
+            <li class="gallary__item">
+              <div class="gallary__img"> <img
                   src="./images/ex8.jpg"
                   alt="дизайн лого"
                   width="370"
@@ -182,13 +182,13 @@
                   відвідувачу отримати вичерпні відомості про компанію чи
                   приватну
                   особу.</div></div>
-              <div class="ex-info">
-                <h3 class="exmples-names">Проєкт LAB</h3>
-                <p class="exmples-info">Маркетинг</p>
+              <div class="product">
+                <h3 class="product__name">Проєкт LAB</h3>
+                <p class="product__info">Маркетинг</p>
               </div>
             </li>
-            <li class="examples-cards">
-              <div class="img-ex"><img
+            <li class="gallary__item">
+              <div class="gallary__img"><img
                 src="./images/ex9.jpg"
                 alt="сторинка сайту"
                 width="370"
@@ -198,9 +198,9 @@
                   відвідувачу отримати вичерпні відомості про компанію чи
                   приватну
                   особу.</div></div>
-              <div class="ex-info">
-                <h3 class="exmples-names">Growing Business</h3>
-                <p class="exmples-info">Додаток</p>
+              <div class="product">
+                <h3 class="product__name">Growing Business</h3>
+                <p class="product__info">Додаток</p>
               </div>
             </li>
           </ul>
@@ -211,58 +211,58 @@
     <footer class="page-footer">
       <div class="container page-footer__container">
         <div class="left-footer">
-          <a class="logo-b" href="./index.html"><span>Web</span>Studio</a>
+          <a class="logo page-footer__logo" href="./index.html"><span>Web</span>Studio</a>
           <address>
-            <ul class="f-links">
-              <li>
+            <ul class="footer-info">
+              <li class="footer-info__item">
                 <a
-                  class="footer-links"
+                  class="footer-info__links"
                   href=" https://goo.gl/maps/tbmbM4fvrWX6sfsx7">
                   м. Київ,Бульвар Лесі Українки, б. 26</a>
               </li>
-              <li>
-                <a class="contacts-b" href="info@devstudio.com">info@devstudio.com</a>
+              <li class="footer-info__item">
+                <a class="footer-info__links footer-info__links--contacts" href="info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li>
-                <a class="contacts-b" href="tel:380961111111">+38 096 111 11
+              <li class="footer-info__item">
+                <a class=" footer-info__links footer-info__links--contacts" href="tel:380961111111">+38 096 111 11
                   11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="f-s-links">
-          <h3>Приєднуйтесь</h3>
-          <ul class="f-social">
-            <li><a class="fs-links" href="https://www.instagram.com/"><svg
-                  class="f-icons ">
+        <div class="middle-footer">
+          <h3 class="middle-footer__heading">Приєднуйтесь</h3>
+          <ul class="social">
+            <li class="social__item"><a class="social__links social__links--footer" href="https://www.instagram.com/"><svg
+                  class="social__icons">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg></a></li>
-            <li><a class="fs-links" href="https://twitter.com/"><svg
-                  class="f-icons">
+            <li class="social__item"><a class="social__links social__links--footer" href="https://twitter.com/"><svg
+                  class="social__icons">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg></a></li>
-            <li><a class="fs-links" href="hhttps://www.facebook.com/"><svg
-                  class="f-icons">
+            <li class="social__item"><a class="social__links social__links--footer" href="hhttps://www.facebook.com/"><svg
+                  class="social__icons">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg></a></li>
-            <li><a class="fs-links" href="https://www.linkedin.com/feed/"><svg
-                  class="f-icons">
+            <li class="social__item"><a class="social__links social__links--footer" href="https://www.linkedin.com/feed/"><svg
+                  class="social__icons">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg></a></li>
           </ul>
         </div>
-        <div class="send_email">
-          <h3>Підпишіться на розсилку</h3>
-          <form class="signup_form">
-            <input class="footer-input" type="email" name="f-email"
+        <div class="right-footer">
+          <h3 class="right-footer__heading">Підпишіться на розсилку</h3>
+          <form class="signup-form">
+            <input class="signup-form__input" type="email" name="f-email"
               placeholder="E-mail" />
-            <button class="f-email" type="submit"><p>Підписатися</p><svg
-                class="f-email-i">
+            <button class="button signup-form__button" type="submit"><p class="button__label">Підписатися</p><svg
+                class="button__icon">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg></button>
           </form>
         </div>
       </div>
-    </footer>
+    </footer>>
   </body>
 </html>

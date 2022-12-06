@@ -1,7 +1,17 @@
-.container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+@import './utils/variables';
+@import './components/container';
+@import './base/common';
+@import './base/reset';
+
+@import './partials/header';
+@import './partials/studio/hero';
+
+@import './partials/studio/information';
+@import './partials/studio/work';
+@import './partials/studio/workers';
+@import './components/social';
+@import './partials/studio/clients';
+@import './partials/portfoliopage/porfolio';
+@import './partials/footer';
+
+@import './partials/studio/modalform';

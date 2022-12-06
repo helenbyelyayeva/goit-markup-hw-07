@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Студія</title>
   </head>
   <body>
@@ -49,53 +49,6 @@
         <button data-modal-open class="button hero__button" type="button">Замовити
           послугу</button>
       </section>
-
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button data-modal-close class="modal-button"><svg
-              class="modal-button__icons">
-              <use href="./images/icons.svg#icon-cross"></use></svg></button>
-          <form class="modal-form">
-            <h3 class="modal-form__heading">Залиште свої дані, ми вам
-              передзвонимо</h3>
-            <label class="modal-form__label" for="user_name">Ім'я
-              <input class="modal-form__input" type="text" name="name"
-                id="user_name">
-              <svg class="modal-form__icons">
-                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use></svg>
-            </label>
-            <label class="modal-form__label" for="user_telephone">Телефон
-              <input class="modal-form__input" type="tel" name="telephone"
-                id="user_telephone">
-              <svg class="modal-form__icons">
-                <use href="./images/icons.svg#icon-person-black-18dp-1"></use></svg>
-            </label>
-            <label class="modal-form__label" for="user_email">Пошта
-              <input class="modal-form__input" type="email" name="email"
-                id="user_email">
-              <svg class="modal-form__icons">
-                <use href="./images/icons.svg#icon-Vector"></use></svg>
-            </label>
-            <label class="modal-form__label" for="comment">Коментар
-              <textarea class="modal-form__comment" name="comment" id="comment"
-                rows="8"
-                placeholder="Введіть текст"></textarea>
-            </label>
-
-            <div class="terms">
-              <label class="terms__checkbox-label">
-                <input class="checkbox" type="checkbox" name="topic"
-                  value=""/>
-                <span class="check-icon"></span><p>Погоджуюся з розсилкою
-                  та приймаю</p>
-              </label>
-              <a class="modal-terms">Умови договору</a>
-            </div>
-            <button class="modal-button__submit" type="submit">Відправити</button>
-          </form>
-        </div>
-      </div>
-
 
       <section class="information">
         <div class="container information__container">
@@ -373,59 +326,105 @@
     <footer class="page-footer">
       <div class="container page-footer__container">
         <div class="left-footer">
-          <a class="logo-b" href="./index.html"><span>Web</span>Studio</a>
+          <a class="logo page-footer__logo" href="./index.html"><span>Web</span>Studio</a>
           <address>
-            <ul class="f-links">
-              <li>
+            <ul class="footer-info">
+              <li class="footer-info__item">
                 <a
-                  class="footer-links"
+                  class="footer-info__links"
                   href=" https://goo.gl/maps/tbmbM4fvrWX6sfsx7">
                   м. Київ,Бульвар Лесі Українки, б. 26</a>
               </li>
-              <li>
-                <a class="contacts-b" href="info@devstudio.com">info@devstudio.com</a>
+              <li class="footer-info__item">
+                <a class=" footer-info__links footer-info__links--contacts" href="info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li>
-                <a class="contacts-b" href="tel:380961111111">+38 096 111 11
+              <li class="footer-info__item">
+                <a class="footer-info__links footer-info__links--contacts" href="tel:380961111111">+38 096 111 11
                   11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="f-s-links">
-          <h3>Приєднуйтесь</h3>
-          <ul class="f-social">
-            <li><a class="fs-links" href="https://www.instagram.com/"><svg
-                  class="f-icons ">
+        <div class="middle-footer">
+          <h3 class="middle-footer__heading">Приєднуйтесь</h3>
+          <ul class="social">
+            <li class="social__item"><a class="social__links social__links--footer" href="https://www.instagram.com/"><svg
+                  class="social__icons">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg></a></li>
-            <li><a class="fs-links" href="https://twitter.com/"><svg
-                  class="f-icons">
+            <li class="social__item"><a class="social__links social__links--footer" href="https://twitter.com/"><svg
+                  class="social__icons">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg></a></li>
-            <li><a class="fs-links" href="hhttps://www.facebook.com/"><svg
-                  class="f-icons">
+            <li class="social__item"><a class="social__links social__links--footer" href="hhttps://www.facebook.com/"><svg
+                  class="social__icons">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg></a></li>
-            <li><a class="fs-links" href="https://www.linkedin.com/feed/"><svg
-                  class="f-icons">
+            <li class="social__item"><a class="social__links social__links--footer" href="https://www.linkedin.com/feed/"><svg
+                  class="social__icons">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg></a></li>
           </ul>
         </div>
-        <div class="send_email">
-          <h3>Підпишіться на розсилку</h3>
-          <form class="signup_form">
-            <input class="footer-input" type="email" name="f-email"
+        <div class="right-footer">
+          <h3 class="right-footer__heading">Підпишіться на розсилку</h3>
+          <form class="signup-form">
+            <input class="signup-form__input" type="email" name="f-email"
               placeholder="E-mail" />
-            <button class="f-email" type="submit"><p>Підписатися</p><svg
-                class="f-email-i">
+            <button class="button signup-form__button" type="submit"><p class="button__label">Підписатися</p><svg
+                class="button__icon">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg></button>
           </form>
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="modal-button"><svg
+            class="modal-button__icons">
+            <use href="./images/icons.svg#icon-cross"></use></svg></button>
+        <form class="modal-form">
+          <h3 class="modal-form__heading">Залиште свої дані, ми вам
+            передзвонимо</h3>
+          <label class="modal-form__label" for="user_name">Ім'я
+            <input class="modal-form__input" type="text" name="name"
+              id="user_name">
+            <svg class="modal-form__icons">
+              <use href="./images/icons.svg#icon-phone-black-18dp-1"></use></svg>
+          </label>
+          <label class="modal-form__label" for="user_telephone">Телефон
+            <input class="modal-form__input" type="tel" name="telephone"
+              id="user_telephone">
+            <svg class="modal-form__icons">
+              <use href="./images/icons.svg#icon-person-black-18dp-1"></use></svg>
+          </label>
+          <label class="modal-form__label" for="user_email">Пошта
+            <input class="modal-form__input" type="email" name="email"
+              id="user_email">
+            <svg class="modal-form__icons">
+              <use href="./images/icons.svg#icon-Vector"></use></svg>
+          </label>
+          <label class="modal-form__label" for="comment">Коментар
+            <textarea class="modal-form__comment" name="comment" id="comment"
+              rows="8"
+              placeholder="Введіть текст"></textarea>
+          </label>
+
+          <div class="terms">
+            <label class="terms__label">
+              <input class="terms__input" type="checkbox" name="topic"
+                value=""/>
+              <span class="terms__icon"></span><p>Погоджуюся з розсилкою
+                та приймаю</p>
+            </label>
+            <a class="modal__links ">Умови договору</a>
+          </div>
+          <button class="modal-button__submit" type="submit">Відправити</button>
+        </form>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    
   </body>
 </html>
