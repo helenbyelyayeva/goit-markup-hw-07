@@ -26,6 +26,10 @@
         cursor: pointer;
         outline: none;
     }
+    &--footer {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #fff;
+      }
   }
   
   .social__icons {
