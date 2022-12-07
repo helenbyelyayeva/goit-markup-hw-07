@@ -61,6 +61,7 @@
   &--current::after {
     content: '';
     display: block;
+    border-radius: 2px;
     left: 0;
     bottom: -1px;
     background-color: var(--active-color);
